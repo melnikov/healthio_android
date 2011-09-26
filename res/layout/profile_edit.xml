@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#c2d8f2">
+	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="50dip" android:background="@drawable/layout_title">
+		<TextView android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textStyle="bold" android:textSize="18px" android:gravity="center" android:text="Edit Profile" />
+	</LinearLayout>
+	<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+			<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/layout_style" android:layout_margin="10dp" android:padding="12dp">
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"> 
+					<TextView android:text="City" android:layout_width="85dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<AutoCompleteTextView android:id="@+id/city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="Email" android:layout_width="85dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<EditText android:id="@+id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:inputType="textEmailAddress" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="Height" android:layout_width="85dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<EditText android:id="@+id/height" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:editable="false" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="Weight" android:layout_width="85dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<EditText android:id="@+id/weight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:editable="false" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="Date of Birth" android:layout_width="85dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<EditText android:id="@+id/date_of_birth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:editable="false" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="Gender" android:layout_width="85dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<EditText android:id="@+id/gender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:editable="false" />
+				</LinearLayout>
+	    		<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent">
+	    			<TextView android:text="Tobacco" android:layout_width="85dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<EditText android:id="@+id/tobacco" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:editable="false" />
+	    		</LinearLayout>
+	    		<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent">
+	    			<TextView android:text="Alcohol" android:layout_width="85dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<EditText android:id="@+id/alcohol" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:editable="false" />
+	    		</LinearLayout>
+	    		<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent">
+			        <TextView android:text="Alert" android:layout_width="85dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+			        <EditText android:id="@+id/alert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:editable="false" />
+	    		</LinearLayout>
+	    	</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">			
+				<Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Save" android:onClick="submit" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>	
+</LinearLayout>

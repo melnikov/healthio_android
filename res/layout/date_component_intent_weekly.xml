@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#c2d8f2">
+	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="50dip" android:background="@drawable/layout_title">
+		<TextView android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textStyle="bold" android:textSize="18px" android:gravity="center" android:text="Select Repeat" />
+	</LinearLayout>
+	<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+			<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/layout_style" android:layout_margin="10dp" android:padding="12dp">
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<Button android:layout_width="150dp" android:layout_height="wrap_content" android:text="Select Day of Week" android:onClick="select_week" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" android:paddingTop="10dp" /> 
+					<EditText android:id="@+id/week" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:editable="false" android:layout_marginTop="2dp" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<Button android:layout_width="150dp" android:layout_height="wrap_content" android:text="Select Time" android:onClick="select_time" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" android:paddingTop="10dp" />
+					<EditText android:id="@+id/time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:editable="false" android:layout_marginTop="2dp" />
+				</LinearLayout>
+	    	</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">			
+				<Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/indication_submit" android:onClick="submit" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

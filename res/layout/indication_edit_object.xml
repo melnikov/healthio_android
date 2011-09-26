@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#c2d8f2">
+	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="50dip" android:background="@drawable/layout_title">
+		<TextView android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textStyle="bold" android:textSize="18px" android:gravity="center" android:text="Edit Indication" />
+	</LinearLayout>
+	<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+			<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/layout_style" android:layout_margin="10dp" android:padding="12dp">
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"> 
+					<TextView android:text="@string/indication_title" android:layout_width="75dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<EditText android:id="@+id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:inputType="text" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="@string/indication_subtitle" android:layout_width="75dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<EditText android:id="@+id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:inputType="text" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="@string/indication_startdate" android:layout_width="75dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<EditText android:id="@+id/startdate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:editable="false" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="@string/indication_enddate" android:layout_width="75dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<EditText android:id="@+id/enddate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:editable="false" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="@string/indication_repeat" android:layout_width="75dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="left" android:editable="false" android:text="None" android:textStyle="bold" android:id="@+id/repeat" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="@string/indication_severity" android:layout_width="75dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:gravity="left" android:textColor="#000000" />
+					<SeekBar android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/severity" android:layout_marginRight="5dp" />
+				</LinearLayout>
+	    		<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent">
+			        <TextView android:text="Severity: " android:textStyle="bold" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="85dp" android:textColor="#000000" />
+			        <TextView android:id="@+id/severity_out" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textStyle="bold" android:gravity="left" android:textColor="#000000" />
+	    		</LinearLayout>
+	    	</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">			
+				<Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/indication_submit" android:onClick="submit" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>	
+</LinearLayout>

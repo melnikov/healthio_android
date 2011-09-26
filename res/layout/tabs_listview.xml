@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="match_parent">
+	<TableLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:stretchColumns="1"
+		android:layout_height="50dp" android:background="@drawable/layout_title">
+		<TableRow android:paddingTop="8dp">
+			<Button android:layout_width="70dp" android:layout_height="40dp"
+				android:text="Profile" android:onClick="profile_button"
+				android:gravity="left" 
+				android:id="@+id/profileButton"
+				android:textColor="#ffffff"
+				android:textStyle="bold"
+				/>
+			<TextView android:textColor="@android:color/white"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textStyle="bold" android:textSize="18px" android:text="@string/app_name"
+				android:gravity="center" />
+			<Button android:layout_width="70dp" android:layout_height="40dp"
+				android:text="Logout" android:onClick="logout_button"
+				android:id="@+id/logoutButton"
+				android:gravity="right"
+				android:textColor="#ffffff"
+				android:textStyle="bold"
+				 />
+		</TableRow>
+	</TableLayout>
+	<ListView android:id="@+id/android:list" android:fadingEdge="none"
+		android:dividerHeight="1dip" android:footerDividersEnabled="true"
+		android:headerDividersEnabled="true" android:layout_height="match_parent"
+		android:layout_width="match_parent" android:background="#ffffff" />
+	<TextView android:id="@+id/android:empty"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:text="No results" android:background="#ffffff" />
+</LinearLayout>

@@ -1,0 +1,4 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#b6c076" style="?android:attr/listSeparatorTextViewStyle"
+	android:textColor="#2e4014"
+	android:id="@+android:id/title" />

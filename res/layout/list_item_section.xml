@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/base_window" android:background="#b6c076">
+	<Button  
+		 android:background="@drawable/add_round"
+		android:onClick="add_form" android:layout_alignParentRight="true"
+		android:layout_marginRight="8dp" android:layout_marginTop="3dp"
+		android:layout_height="30dp"
+		android:layout_width="30dp"
+		android:id="@+id/add_form" />
+	<include android:id="@+id/list_item_section_text" layout="@layout/preference_category"
+		android:layout_width="200dp" android:layout_height="wrap_content" />
+</RelativeLayout>

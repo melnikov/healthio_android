@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hospital.activity" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+        <activity android:name=".Main" android:label="@string/app_name" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name=".OneTab" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".IndicationsLauncher" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".IndicationOutput" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".IndicationEditObj" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".IndicationAddForm" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".TwoTab" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".TreatmentsLauncher" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".TreatmentOutput" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".TreatmentEditObj" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".TreatmentAddForm" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".ThreeTab" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".ProvidersLauncher" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".ProviderOutput" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".ProviderEditObj" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".ProviderAddForm" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".FourTab" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".DateComponentIntentIndication" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".DateComponentIntentTreatment" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".Profile" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+		<activity android:name=".ProfileEdit" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"> </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"> </uses-permission>
+</manifest>
